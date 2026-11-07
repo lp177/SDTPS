@@ -21,3 +21,7 @@ New to the protocol? Read the clear-text profile first: **[SDTP](https://github.
 ## Status
 
 Informational draft, version 1, describing a protocol in production use between AI agent sessions. Issues, reviews of the security design and independent implementations are very welcome.
+
+## License
+
+Licensed under the [Apache License, Version 2.0](LICENSE).
