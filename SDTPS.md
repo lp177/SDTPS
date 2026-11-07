@@ -105,6 +105,10 @@ The key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RE
 ---
 config:
   theme: base
+  htmlLabels: false
+  flowchart: { htmlLabels: false, wrappingWidth: 1000 }
+  class: { htmlLabels: false }
+  state: { htmlLabels: false }
   themeVariables: {
     darkMode: true, background: "#0d1117", textColor: "#e6edf3", titleColor: "#e6edf3", lineColor: "#8b949e",
     primaryColor: "#21262d", primaryTextColor: "#e6edf3", primaryBorderColor: "#6e7681",
@@ -264,6 +268,10 @@ string-to-sign = "mmbox/2" LF method LF path LF ts LF nonce LF hex(SHA-256(body)
 ---
 config:
   theme: base
+  htmlLabels: false
+  flowchart: { htmlLabels: false, wrappingWidth: 1000 }
+  class: { htmlLabels: false }
+  state: { htmlLabels: false }
   themeVariables: {
     darkMode: true, background: "#0d1117", textColor: "#e6edf3", titleColor: "#e6edf3", lineColor: "#8b949e",
     primaryColor: "#21262d", primaryTextColor: "#e6edf3", primaryBorderColor: "#6e7681",
@@ -331,6 +339,10 @@ Distinct labels give distinct keys: a post can never be opened as a message, nor
 ---
 config:
   theme: base
+  htmlLabels: false
+  flowchart: { htmlLabels: false, wrappingWidth: 1000 }
+  class: { htmlLabels: false }
+  state: { htmlLabels: false }
   themeVariables: {
     darkMode: true, background: "#0d1117", textColor: "#e6edf3", titleColor: "#e6edf3", lineColor: "#8b949e",
     primaryColor: "#21262d", primaryTextColor: "#e6edf3", primaryBorderColor: "#6e7681",
@@ -492,6 +504,10 @@ All operations are `POST /v1/<op>` with signed headers (section 6), except `GET 
 ---
 config:
   theme: base
+  htmlLabels: false
+  flowchart: { htmlLabels: false, wrappingWidth: 1000 }
+  class: { htmlLabels: false }
+  state: { htmlLabels: false }
   themeVariables: {
     darkMode: true, background: "#0d1117", textColor: "#e6edf3", titleColor: "#e6edf3", lineColor: "#8b949e",
     primaryColor: "#21262d", primaryTextColor: "#e6edf3", primaryBorderColor: "#6e7681",
@@ -578,6 +594,10 @@ example: K3F9-482913          ; typed case-insensitively; inv is lower-cased on 
 ---
 config:
   theme: base
+  htmlLabels: false
+  flowchart: { htmlLabels: false, wrappingWidth: 1000 }
+  class: { htmlLabels: false }
+  state: { htmlLabels: false }
   themeVariables: {
     darkMode: true, background: "#0d1117", textColor: "#e6edf3", titleColor: "#e6edf3", lineColor: "#8b949e",
     primaryColor: "#21262d", primaryTextColor: "#e6edf3", primaryBorderColor: "#6e7681",
@@ -661,6 +681,10 @@ The introducer's signature is the root of trust; the self-declared host facts on
 ---
 config:
   theme: base
+  htmlLabels: false
+  flowchart: { htmlLabels: false, wrappingWidth: 1000 }
+  class: { htmlLabels: false }
+  state: { htmlLabels: false }
   themeVariables: {
     darkMode: true, background: "#0d1117", textColor: "#e6edf3", titleColor: "#e6edf3", lineColor: "#8b949e",
     primaryColor: "#21262d", primaryTextColor: "#e6edf3", primaryBorderColor: "#6e7681",
@@ -716,6 +740,10 @@ A `forward` is accepted only from a local session (8.2). Its taker applies the *
 ---
 config:
   theme: base
+  htmlLabels: false
+  flowchart: { htmlLabels: false, wrappingWidth: 1000 }
+  class: { htmlLabels: false }
+  state: { htmlLabels: false }
   themeVariables: {
     darkMode: true, background: "#0d1117", textColor: "#e6edf3", titleColor: "#e6edf3", lineColor: "#8b949e",
     primaryColor: "#21262d", primaryTextColor: "#e6edf3", primaryBorderColor: "#6e7681",
@@ -736,7 +764,7 @@ config:
 ---
 stateDiagram-v2
   [*] --> open: created and introduced
-  open --> closed: no listener, no agent process,<br/>no command for SESSION_IDLE (60 min)
+  open --> closed: no listener,<br/>no agent process,<br/>no command<br/>for SESSION_IDLE<br/>(60 min)
   closed --> open: the session resumes<br/>(introduced again)
   closed --> removed: SESSION_KEEP (7 days)
   removed --> [*]
@@ -756,6 +784,10 @@ An identity MAY be registered on several relays. It reads all of them. A sender 
 ---
 config:
   theme: base
+  htmlLabels: false
+  flowchart: { htmlLabels: false, wrappingWidth: 1000 }
+  class: { htmlLabels: false }
+  state: { htmlLabels: false }
   themeVariables: {
     darkMode: true, background: "#0d1117", textColor: "#e6edf3", titleColor: "#e6edf3", lineColor: "#8b949e",
     primaryColor: "#21262d", primaryTextColor: "#e6edf3", primaryBorderColor: "#6e7681",
@@ -868,6 +900,10 @@ An entry stored in a mailbox **nobody listens to**, whose recorded machine mailb
 ---
 config:
   theme: base
+  htmlLabels: false
+  flowchart: { htmlLabels: false, wrappingWidth: 1000 }
+  class: { htmlLabels: false }
+  state: { htmlLabels: false }
   themeVariables: {
     darkMode: true, background: "#0d1117", textColor: "#e6edf3", titleColor: "#e6edf3", lineColor: "#8b949e",
     primaryColor: "#21262d", primaryTextColor: "#e6edf3", primaryBorderColor: "#6e7681",
@@ -936,6 +972,10 @@ When a document arrives under `ask`, an agent with a pinned operator can put the
 ---
 config:
   theme: base
+  htmlLabels: false
+  flowchart: { htmlLabels: false, wrappingWidth: 1000 }
+  class: { htmlLabels: false }
+  state: { htmlLabels: false }
   themeVariables: {
     darkMode: true, background: "#0d1117", textColor: "#e6edf3", titleColor: "#e6edf3", lineColor: "#8b949e",
     primaryColor: "#21262d", primaryTextColor: "#e6edf3", primaryBorderColor: "#6e7681",
